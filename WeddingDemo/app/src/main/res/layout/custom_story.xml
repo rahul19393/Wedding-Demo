@@ -1,0 +1,59 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:id="@+id/storyhead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp180"
+            android:layout_height="150dp"
+            android:background="@drawable/storylayer"
+            >
+
+            <ImageView
+                android:id="@+id/storyimg"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:src="@drawable/dummyimage"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/dp45"
+                android:layout_marginLeft="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titlestory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/sp33"
+            android:text="Jab We Met"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/storytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp20"
+        android:textColor="@color/storyTextColor"
+        android:letterSpacing="0.05"
+        android:layout_below="@+id/storyhead"
+        android:lineSpacingExtra="8.7sp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:text="I was in London for our friend Trey&apos;s wedding and a bunch of us got together for Rugby in Hyde park...some rough tackles later, I was in the arms of a tall, dark, handsome stranger. The rest is history. "
+        />
+
+</RelativeLayout>

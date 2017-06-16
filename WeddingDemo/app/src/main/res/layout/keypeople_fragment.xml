@@ -1,0 +1,58 @@
+<com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout
+    android:id="@+id/parallax"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:parallaxScaleVertical="0.50"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/keycontactpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        ></android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/custom_primary_round"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp50">
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Bride"
+            android:textSize="@dimen/sp20"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:src="@drawable/toleft"
+            android:padding="@dimen/dp8"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:src="@drawable/toright"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp8"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp15"
+        android:gravity="center"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/brownTextColor"
+        android:text="We love gifts. If you want to surprise us with a beautiful \n gift. Then find some inspiration from below sites."/>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp150"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp30"
+            android:src="@drawable/amazon"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp5"
+            android:src="@drawable/flipcart"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp5"
+            android:src="@drawable/snapdeal"/>
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~ OR ~"
+            android:textStyle="bold"
+            android:textSize="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/storyTextColor"
+            />
+
+        <Button
+            android:id="@+id/sendmony"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@drawable/button_round"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="Send Money"
+            android:textSize="@dimen/sp20"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp120"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp20"
+        android:src="@drawable/afs"/>
+
+</RelativeLayout>

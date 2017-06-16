@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/header"
+        >
+
+<RelativeLayout
+    android:id="@+id/bactto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+    <ImageView
+        android:id="@+id/ic"
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp25"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:src="@drawable/backto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Key People"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ic"/>
+
+
+</RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Team Bridge"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp24"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+
+        <me.crosswall.lib.coverflow.core.PagerContainer
+            android:id="@+id/pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:overScrollMode="never">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:overScrollMode="never" />
+
+        </me.crosswall.lib.coverflow.core.PagerContainer>
+
+        <TextView
+            android:id="@+id/teamname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Tom Cruize"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp24" />
+
+        <TextView
+            android:id="@+id/relation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Best man"
+            android:textColor="@color/storyTextColor"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp20"
+            android:gravity="center"
+            android:text="Tom and I have been co-workers for the past 7 years. He is the definition of a powerhouse and has stuck with me through thick and thin. We've been through many crazy and wonderful times together...."
+            android:textColor="@color/storyTextColor"
+            android:textSize="@dimen/sp20" />
+
+    </LinearLayout>
+
+</RelativeLayout>

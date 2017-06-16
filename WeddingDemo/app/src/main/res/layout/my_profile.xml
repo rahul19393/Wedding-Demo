@@ -1,0 +1,125 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp120">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp120"
+            android:src="@drawable/photo"
+            android:layout_marginTop="@dimen/dp20"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tom Cruize"
+        android:textSize="@dimen/sp20"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/dp15"/>
+    <TextView
+        android:id="@+id/teamname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Groomsman - Team Groom"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/storyTextColor"
+        android:layout_marginTop="@dimen/dp5"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="@dimen/dp50"
+        android:background="#ECE4E3"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/callprofile"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 9898989898"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/storyTextColor"/>
+
+
+    </LinearLayout> <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="@dimen/dp50"
+        android:background="#ECE4E3"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/email"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tom@gmail.com"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/storyTextColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="@dimen/dp50"
+        android:background="#ECE4E3"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/wallet"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$300"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/storyTextColor"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/chat_drawable"
+        android:text="EDIT"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/storyTextColor"/>
+
+</LinearLayout>

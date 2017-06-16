@@ -1,0 +1,57 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent">
+
+    <GridView
+        android:id="@+id/galleryview"
+        android:layout_width="fill_parent"
+        android:numColumns="2"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:horizontalSpacing="@dimen/dp5"
+        android:verticalSpacing="@dimen/dp5"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:stretchMode="columnWidth"></GridView>
+</RelativeLayout>-->
+<LinearLayout android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <me.crosswall.lib.coverflow.core.PagerContainer
+        android:id="@+id/pager_container"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="@dimen/dp200">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:overScrollMode="never"
+            android:layout_gravity="center"/>
+
+    </me.crosswall.lib.coverflow.core.PagerContainer>
+
+
+
+    <GridView
+        android:id="@+id/galleryview"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:horizontalSpacing="2dp"
+        android:numColumns="4"
+        android:padding="4dp"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:scrollbars="none"
+        android:verticalSpacing="2dp"
+         />
+
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="wedcraze.acumeet.com.weddingdemo.Activity.ChatActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/header"
+        >
+
+        <RelativeLayout
+            android:id="@+id/bactto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/ic"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/backto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textColor="@color/colorPrimary"
+                android:textSize="8sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ic"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Tom Cruize"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp24"/>
+
+    </RelativeLayout>
+
+    <ListView android:id="@+id/chatlist"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/header"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/comment"
+        android:divider="@android:color/transparent"
+        android:paddingTop="@dimen/dp10"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        ></ListView>
+    <RelativeLayout
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/round_white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp15">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@drawable/round_white"
+            android:hint="Type something here..."
+            android:textSize="@dimen/sp13"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp15"
+            android:singleLine="true"
+            android:layout_margin="@dimen/dp15"
+            android:layout_toLeftOf="@+id/attachment"
+            android:textColor="@android:color/black"/>
+
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_toLeftOf="@+id/attachment"
+            android:src="@drawable/camera"
+            android:layout_centerVertical="true"
+            android:tint="@color/storyTextColor"
+            android:layout_marginRight="@dimen/dp10"
+            />
+
+        <ImageView
+            android:id="@+id/attachment"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/attachments"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_alignParentRight="true"
+            android:tint="@color/colorPrimary"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>

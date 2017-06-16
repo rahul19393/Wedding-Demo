@@ -1,0 +1,62 @@
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp150"
+            android:layout_toLeftOf="@+id/imgkey"
+            android:layout_marginRight="@dimen/dp15"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/hotelname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tom Cruize"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40dp"/>
+                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Best man"
+                    android:textColor="@color/storyTextColor"
+                     android:gravity="right"
+                    android:textSize="@dimen/sp15"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/imgkey"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150"
+            android:layout_alignParentRight="true"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/galleryimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/photo"
+                android:padding="@dimen/dp15"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/circleframe"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

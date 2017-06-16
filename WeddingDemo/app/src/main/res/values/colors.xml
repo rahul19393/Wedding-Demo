@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9b1431</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="storyTextColor">#a55232</color>
+    <color name="brownTextColor">#d37655</color>
+    <color name="greyTextColor">#575757</color>
+    <color name="ligntprimaryColor">#bb1e22</color>
+    <color name="blueColor">#3b5998</color>
+</resources>

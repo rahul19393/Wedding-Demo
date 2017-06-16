@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeddingDemo</string>
+    <string name="slide_up_to_next">Slide up to next</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="mob">+91 9876543210</string>
+</resources>

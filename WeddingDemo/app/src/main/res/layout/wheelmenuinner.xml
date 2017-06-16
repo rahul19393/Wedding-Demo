@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <!--
+        <TextView
+            android:id="@+id/wheel_menu_item_tv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:padding="16dip"
+            android:textSize="14.0dip"
+            tools:text="Test"
+            android:background="#ffff00"
+            tools:visibility="visible"/>-->
+    <LinearLayout
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:background="@drawable/innerradialmenu"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/keypeople"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_below="@+id/home"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/guestlist"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:layout_below="@+id/home"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/events"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/gallery"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:layout_above="@+id/events"
+                    />
+
+                <ImageView
+                    android:id="@+id/ourstory"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/events"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>

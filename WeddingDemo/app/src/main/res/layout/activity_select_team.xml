@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context="wedcraze.acumeet.com.weddingdemo.Activity.SelectTeamActivity">
+
+
+    <TextView
+        android:id="@+id/selectteam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Team"
+        android:textSize="@dimen/sp20"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/bride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/imgkey"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp120"
+                android:layout_alignParentRight="true"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/galleryimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/keydummy"
+                    android:padding="@dimen/dp15"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/circleframe"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/bridetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Bride"
+                android:textSize="@dimen/sp13"
+                android:layout_marginTop="@dimen/dp15"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~ OR ~"
+            android:textSize="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp15"
+            android:textColor="@color/storyTextColor"
+            android:layout_marginLeft="@dimen/dp20"/>
+
+        <LinearLayout
+            android:id="@+id/groom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp20"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp120"
+                android:layout_alignParentRight="true"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/keydummytwo"
+                    android:padding="@dimen/dp15"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/circleframe"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/groomtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Groom"
+                android:textSize="@dimen/sp13"
+                android:layout_marginTop="@dimen/dp15"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="wedcraze.acumeet.com.weddingdemo.Activity.LoginActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+    <RelativeLayout
+        android:layout_width="@dimen/dp180"
+        android:layout_height="150dp"
+        android:background="@drawable/storylayer"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:src="@drawable/dummyimage"
+            android:scaleType="fitXY"
+            android:layout_marginRight="@dimen/dp45"
+            android:layout_marginLeft="@dimen/dp45"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="@dimen/dp180"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/facebook_border"
+        android:text="@string/login_with_facebook"
+        android:textSize="@dimen/sp18"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/blueColor"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="~ or ~"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/storyTextColor"
+        android:textSize="@dimen/sp18"
+        android:layout_marginTop="@dimen/dp15"/>
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="@dimen/dp180"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/google_border"
+        android:text="@string/login_with_google"
+        android:textSize="@dimen/sp18"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/dp15"
+        android:textColor="@color/ligntprimaryColor"/>
+</LinearLayout>
+</RelativeLayout>

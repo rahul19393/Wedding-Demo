@@ -1,0 +1,15 @@
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ListView android:id="@+id/contactlist"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:divider="@android:color/transparent"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingTop="@dimen/dp10"
+    android:paddingRight="@dimen/dp10"
+ ></ListView>
+
+    </RelativeLayout>

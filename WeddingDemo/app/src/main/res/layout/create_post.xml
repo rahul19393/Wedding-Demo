@@ -1,0 +1,82 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:src="@drawable/photo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tom Criuize"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/dp10"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="Share your moment..."
+        android:textColor="@color/storyTextColor"
+        android:textSize="@dimen/sp13"
+        android:paddingRight="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Photos and Videos"
+        android:textColor="@color/storyTextColor"
+        android:textSize="@dimen/sp13"
+        android:paddingLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/cameraframe">
+
+            <ImageView
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:src="@drawable/camera"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:tint="@color/storyTextColor"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/chat_drawable"
+        android:text="POST"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/storyTextColor"/>
+
+</LinearLayout>

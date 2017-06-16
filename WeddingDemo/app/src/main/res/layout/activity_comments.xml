@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="wedcraze.acumeet.com.weddingdemo.Activity.CommentsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/header"
+        android:background="#05000000"
+        >
+
+        <RelativeLayout
+            android:id="@+id/bactto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/ic"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/backto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wall"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp13"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ic"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Comments"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp24"/>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commentlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/round_white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp15">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@drawable/round_white"
+            android:hint="Write your comment here..."
+            android:textSize="@dimen/sp13"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp15"
+            android:singleLine="true"
+            android:layout_margin="@dimen/dp15"
+            android:layout_toLeftOf="@+id/chat"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/send"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

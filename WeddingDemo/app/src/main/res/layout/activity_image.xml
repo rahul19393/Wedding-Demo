@@ -1,0 +1,40 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/eventimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/gfive"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/blackshadow"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/sp20"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp15"
+            android:paddingBottom="@dimen/dp20"
+            android:text="Beautiful couple enjoining their photoshoot on their engaigement day"
+            android:textColor="@color/brownTextColor"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

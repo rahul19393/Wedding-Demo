@@ -1,0 +1,111 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/dp20">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp150"
+        android:background="@drawable/accomframe">
+
+        <ImageView
+            android:id="@+id/galleryimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hotel"
+            android:padding="@dimen/dp8"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp15">
+
+        <TextView
+            android:id="@+id/hotelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Grandiose"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp50"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp12"
+                android:layout_height="@dimen/dp12"
+                android:src="@drawable/location"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#100, Park Street, New Delhi"
+                android:textColor="@color/brownTextColor"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textSize="@dimen/sp13"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp12"
+                android:layout_height="@dimen/dp12"
+                android:src="@drawable/call"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 9876543210"
+                android:singleLine="true"
+                android:textColor="@color/brownTextColor"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textSize="@dimen/sp13"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp12"
+                android:layout_height="@dimen/dp12"
+                android:src="@drawable/web"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.hotelgrandiose.com"
+                android:singleLine="true"
+                android:textColor="@color/brownTextColor"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textSize="@dimen/sp13"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

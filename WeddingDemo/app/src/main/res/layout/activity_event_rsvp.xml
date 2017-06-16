@@ -1,0 +1,290 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/header"
+        >
+
+        <RelativeLayout
+            android:id="@+id/bactto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/ic"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/backto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+                android:textColor="@color/colorPrimary"
+                android:textSize="8sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ic"/>
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Mehendi"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp24"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp20">
+
+        <TextView
+            android:id="@+id/rsvptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RSVP"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp20"
+            />
+
+        <View
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#ECE4E3"
+            android:padding="@dimen/dp25"
+            android:layout_marginTop="@dimen/dp15"
+          >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+              >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:background="@drawable/accomframe">
+
+                    <ImageView
+                        android:id="@+id/galleryimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hotel"
+                        android:padding="@dimen/dp8"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp15">
+
+                    <TextView
+                        android:id="@+id/hotelname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hotel Grandiose"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="35sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp12"
+                            android:layout_height="@dimen/dp12"
+                            android:src="@drawable/location"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#100, Park Street, New Delhi"
+                            android:textColor="@color/brownTextColor"
+                            android:singleLine="true"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:textSize="@dimen/sp11"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp12"
+                            android:layout_height="@dimen/dp12"
+                            android:src="@drawable/call"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+91 9876543210"
+                            android:singleLine="true"
+                            android:textColor="@color/brownTextColor"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:textSize="@dimen/sp11"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp12"
+                            android:layout_height="@dimen/dp12"
+                            android:src="@drawable/web"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="www.hotelgrandiose.com"
+                            android:singleLine="true"
+                            android:textColor="@color/brownTextColor"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:textSize="@dimen/sp11"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/map"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginLeft="@dimen/dp30"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/storyTextColor"
+                android:text="MAP"
+                android:background="@drawable/buttonframe" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/needacctext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need Accomodation?"
+            android:textSize="@dimen/sp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:textColor="@color/storyTextColor"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp15">
+
+            <LinearLayout
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@drawable/checked"/>
+
+                <TextView
+                    android:id="@+id/yesytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="@color/storyTextColor"
+                    android:textSize="@dimen/sp13"
+                    android:layout_marginLeft="@dimen/dp5"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dp35">
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@drawable/unchecked"/>
+
+                <TextView
+                    android:id="@+id/notext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/storyTextColor"
+                    android:textSize="@dimen/sp13"
+                    android:layout_marginLeft="@dimen/dp5"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp20">
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp45"
+                android:text="ACCEPT"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/storyTextColor"
+                android:background="@drawable/buttonborder"/>
+
+            <Button
+                android:id="@+id/decline"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp45"
+                android:text="DECLINE"
+                android:layout_marginLeft="@dimen/dp30"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/storyTextColor"
+                android:background="@drawable/buttonborder"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

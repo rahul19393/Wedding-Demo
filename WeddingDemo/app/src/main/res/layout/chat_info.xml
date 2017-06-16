@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:padding="@dimen/dp20"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        >
+
+       <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/photo"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/sp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/cross"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="Tom Cruize"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp24"/>
+  <TextView
+      android:id="@+id/team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="Groomsman - Team Groom"
+        android:textColor="@color/storyTextColor"
+        android:textSize="@dimen/sp15"/>
+  <TextView
+      android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="@string/mob"
+      android:layout_marginTop="@dimen/dp15"
+        android:textColor="@color/storyTextColor"
+        android:textSize="@dimen/sp18"/>
+  <TextView
+      android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="tomcat@gmail.com"
+      android:layout_marginTop="@dimen/dp5"
+        android:textColor="@color/storyTextColor"
+        android:textSize="@dimen/sp18"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_drawable"
+        android:gravity="center"
+        android:padding="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp10">
+
+        <ImageView
+            android:layout_width="@dimen/dp12"
+            android:layout_height="@dimen/dp12"
+            android:src="@drawable/chat"
+            android:layout_marginLeft="@dimen/dp5"/>
+
+        <TextView
+            android:id="@+id/chattext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHAT"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp5"
+            android:textColor="@color/storyTextColor"
+            android:textSize="@dimen/sp13"/>
+    </LinearLayout>
+
+</LinearLayout>

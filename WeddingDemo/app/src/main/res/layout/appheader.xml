@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/headerbackground"
+    android:layout_height="65dp"
+    android:background="#98ffffff"
+    >
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp5"
+        android:padding="@dimen/dp8"
+        android:src="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:src="@drawable/notification" />
+
+    <ImageView
+        android:id="@+id/live"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/notification"
+        android:padding="@dimen/dp5"
+        android:src="@drawable/live" />
+
+    <ImageView
+        android:id="@+id/shagun"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/live"
+        android:padding="@dimen/dp5"
+        android:src="@drawable/shagun" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp20"/>
+
+
+</RelativeLayout>

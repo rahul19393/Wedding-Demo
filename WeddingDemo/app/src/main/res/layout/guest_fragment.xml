@@ -1,0 +1,85 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <RelativeLayout
+       android:id="@+id/commentview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp45"
+           android:background="@drawable/round_white"
+           android:hint="Who are you looking for..."
+           android:textSize="@dimen/sp13"
+           android:gravity="center_vertical"
+           android:paddingLeft="@dimen/dp15"
+           android:singleLine="true"
+           android:layout_margin="@dimen/dp15"
+           android:layout_toLeftOf="@+id/chat"
+           android:textColor="@android:color/black"/>
+
+       <ImageView
+           android:id="@+id/chat"
+           android:layout_width="@dimen/dp40"
+           android:layout_height="@dimen/dp40"
+           android:src="@drawable/chatdadge"
+           android:padding="@dimen/dp5"
+           android:layout_marginRight="@dimen/dp10"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"/>
+
+   </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/keycontactpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/commentview"
+        android:layout_marginTop="@dimen/dp10"
+        ></android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/custom_primary_round"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp50">
+
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:src="@drawable/toleft"
+            android:padding="@dimen/dp5"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:src="@drawable/toright"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp5"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Bride"
+            android:gravity="center"
+            android:textSize="@dimen/sp40"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
